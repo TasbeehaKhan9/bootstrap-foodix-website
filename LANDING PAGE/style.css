@@ -1,141 +1,105 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.backimage-box{
-    background-color: blueviolet;
-    width: 100%;
-    height: 960px;
-    background-image:url(./IMAGES/background\ pattern\ image.jpg) ;
-    background-size: cover;
+    .backimage-box {
+      background-color: blueviolet;
+      width: 100%;
+      height: 960px;
+      background-image: url('./IMAGES/background pattern image.jpg');
+      background-size: cover;
       animation: slidebg 30s linear infinite;
-    
-}
-@keyframes slidebg {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -1000px 0;
-  }
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6); 
-  z-index: 1;
-}
-.nav-conatainer{
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    top: 0;
-  left: 0;
-  z-index: 2;
-  height: 90px;
-}
-.div-logo{
-   
-    width: 200px;
-    margin-left: 10%;
-    display: flex;
-    margin-top:25px ;
-}
-
-
-ul{
-     display: flex;
-     height: 90px;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding: 0 30%;
-     margin-bottom: 290px;
-      width: 100px;
       position: relative;
-      bottom: 60px;
+    }
+
+    @keyframes slidebg {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -1000px 0;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .navbar {
+      z-index: 2;
+      background-color: black !important;
+    }
+
+    .nav-link {
+      color: aliceblue !important;
+    }
+
+    .logo-image {
+      margin-left: 100px;
+    }
+
+    .dropdown-menu {
+      background-color: rgb(255, 255, 255);
+    }
+
+    .dropdown-menu .dropdown-item {
+      color: rgb(0, 0, 0);
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      color: #BF1109;
+    }
+
+    .buttons {
+      width: 200px;
+      background-color: #BF1109;
+      border: none;
       color: white;
-      
-
-}
-li{
-    display: flex;
-      text-decoration: none;
-      padding: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 20px;
       font-weight: bold;
-      font-size: larger;
-      text-align: center;
-}
-a{
-     text-decoration: none;
-     color: #ffffff;
-}
-.fa-caret-down{
-    color: #ffffff;
-    position: relative;
-    top: 5px;
+    }
+
+    .buttons:hover {
+      background-color: #14A83A;
+      transition: all 0.5s ease-out;
+    }
+
+    .button-cart {
+      width: 70px;
+      background-color: #14A83A;
+      border: none;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .cart-white {
+      color: white;
+    }
+
+    .button-div {
+      margin-left: 50px;
+    }
+
    
-}
 
+      @media screen and (max-width: 600px) {
+    .logo-image {
+        position: relative;
+        right: 80px;
 
-ul:hover .drop_drown-menu{
-    display: block;
-    position: absolute;
-    left:45%;
-    top:100%;
-    
-   
-}
-
-.drop_drown-menu{
-display: none;
-}
-
-.drop_drown-menu ul{
-    display: block;
-    margin: 35%;
-}
-.drop_drown-menu ul li{
-    width: 150px;
-    padding: 8px;
-    font-weight: 700;
-}
-.buttons{
-    width: 200px;
-    background-color: #BF1109;
-    border: none;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-.buttons:hover{
-    background-color: #14A83A;
-    transition: all 0.5s ease-out;
-}
-.button-cart{
-    width: 70px;
-    background-color: #14A83A;
-    border: none;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-.cart-white{
-    color: white;
-}
-.button-div{
- 
-     width: 300px;
-     position: relative;
-     bottom: 480%;
-     left: 70%;
-}
+      
+    }
+  }
