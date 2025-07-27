@@ -1,105 +1,234 @@
   * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+
+  /* <!-- _______________________________________NAVBAR START______________________________________________________________ --> */
+
+  .backimage-box {
+    background-color: blueviolet;
+    width: 100%;
+    height: 960px;
+    background-image: url('./IMAGES/background pattern image.jpg');
+    background-size: cover;
+    animation: slidebg 30s linear infinite;
+    position: relative;
+  }
+
+  @keyframes slidebg {
+    0% {
+      background-position: 0 0;
     }
 
-    .backimage-box {
-      background-color: blueviolet;
-      width: 100%;
-      height: 960px;
-      background-image: url('./IMAGES/background pattern image.jpg');
-      background-size: cover;
-      animation: slidebg 30s linear infinite;
+    100% {
+      background-position: -1000px 0;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .navbar {
+    z-index: 2;
+    height: 100px;
+    background-color: black !important;
+  }
+
+  .nav-link {
+    color: aliceblue !important;
+    font-weight: 700;
+  }
+
+  .logo-image {
+    margin-left: 100px;
+  }
+
+  .dropdown-menu {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .dropdown-menu .dropdown-item {
+    color: rgb(0, 0, 0);
+  }
+
+  .dropdown-menu .dropdown-item:hover {
+    color: #BF1109;
+  }
+
+  .buttons {
+    width: 200px;
+    background-color: #BF1109;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .buttons:hover {
+    background-color: #14A83A;
+    transition: all 0.5s ease-out;
+  }
+
+  .button-cart {
+    width: 70px;
+    background-color: #14A83A;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .cart-white {
+    color: white;
+  }
+
+  .button-div {
+    margin-left: 50px;
+  }
+
+  /* <!-- _______________________________________NAVBAR END______________________________________________________________ --> */
+
+  /* <!-- ____________________________________________hero- section____________________________________________________ --> */
+  .main-conatiner {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .box1 {
+    /* background-color: aqua; */
+    z-index: 2;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box2 {
+    /* background-color: rgb(255, 217, 0); */
+    z-index: 2;
+    display: flex;
+    align-items: center;
+
+
+  }
+
+  .head-top {
+    color: #FFB200;
+    font-weight: 800;
+    font-size: larger;
+  }
+
+  .head-1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 100px;
+    color: white;
+
+  }
+
+  .red-word {
+    color: #BF1109;
+  }
+
+  .para-one {
+    font-weight: 600;
+    color: white;
+  }
+
+  .red-btn {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 190px;
+    color: white;
+    font-weight: 800;
+    font-size: larger;
+    border: none;
+  }
+
+  .red-btn:hover {
+    background-color: #14A83A;
+    transition: all 0.5s ease-out;
+    border: none;
+  }
+
+  .content-box {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 380px;
+    margin-top: 130px;
+    line-height: 25px;
+    width: 540px;
+  }
+
+  .rotate-image {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 190px;
+    right: 500px;
+  }
+
+  /* <!-- ____________________________________________hero- section end____________________________________________________ --> */
+
+
+  @media screen and (max-width: 768px) {
+    .content-box {
+      margin-left: 30px;
+      margin-top: 100px;
+      width: 90%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .logo-image {
       position: relative;
+      right: 80px;
+
+
     }
 
-    @keyframes slidebg {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: -1000px 0;
-      }
+    .box2 {
+
+      position: relative;
+      bottom: 300px;
+
+
     }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      z-index: 1;
+    .biryani-image {
+      height: 300px;
+      margin-left: 30px;
+
     }
 
-    .navbar {
-      z-index: 2;
-      background-color: black !important;
-    }
 
-    .nav-link {
-      color: aliceblue !important;
-    }
+  }
 
-    .logo-image {
+  @media screen and (max-width: 1280px) {
+    .content-box {
       margin-left: 100px;
-    }
+      width: 80%;
 
-    .dropdown-menu {
-      background-color: rgb(255, 255, 255);
-    }
-
-    .dropdown-menu .dropdown-item {
-      color: rgb(0, 0, 0);
-    }
-
-    .dropdown-menu .dropdown-item:hover {
-      color: #BF1109;
-    }
-
-    .buttons {
-      width: 200px;
-      background-color: #BF1109;
-      border: none;
-      color: white;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .buttons:hover {
-      background-color: #14A83A;
-      transition: all 0.5s ease-out;
-    }
-
-    .button-cart {
-      width: 70px;
-      background-color: #14A83A;
-      border: none;
-      color: white;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .cart-white {
-      color: white;
-    }
-
-    .button-div {
-      margin-left: 50px;
-    }
-
-   
-
-      @media screen and (max-width: 600px) {
-    .logo-image {
-        position: relative;
-        right: 80px;
-
-      
     }
   }

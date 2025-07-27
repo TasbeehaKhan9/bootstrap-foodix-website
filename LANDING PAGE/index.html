@@ -1,107 +1,144 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Playwrite+DK+Loopet:wght@100..400&family=Yesteryear&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-  </head>
+</head>
 
 <body>
+    <!-- _______________________________________NAVBAR START______________________________________________________________ -->
+    <div class="backimage-box position-relative">
+        <!-- Overlay -->
+        <div class="overlay"></div>
 
-   <div class="backimage-box position-relative">
-    <!-- Overlay -->
-    <div class="overlay"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./IMAGES/foodix logo.png" alt="Logo" class="logo-image ">
+                </a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./IMAGES/foodix logo.png" alt="Logo" class="logo-image ">
-        </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!-- HOME -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">HOME</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Restaurant</a></li>
+                                <li><a class="dropdown-item" href="#">Beef</a></li>
+                                <li><a class="dropdown-item" href="#">Burger</a></li>
+                                <li><a class="dropdown-item" href="#">Pizza</a></li>
+                                <li><a class="dropdown-item" href="#">Sushi</a></li>
+                            </ul>
+                        </li>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <!-- HOME -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">HOME</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Restaurant</a></li>
-                <li><a class="dropdown-item" href="#">Beef</a></li>
-                <li><a class="dropdown-item" href="#">Burger</a></li>
-                <li><a class="dropdown-item" href="#">Pizza</a></li>
-                <li><a class="dropdown-item" href="#">Sushi</a></li>
-              </ul>
-            </li>
+                        <!-- MENU -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">MENU</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">List One</a></li>
+                                <li><a class="dropdown-item" href="#">List Two</a></li>
+                                <li><a class="dropdown-item" href="#">Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Details</a></li>
+                            </ul>
+                        </li>
 
-            <!-- MENU -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">MENU</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">List One</a></li>
-                <li><a class="dropdown-item" href="#">List Two</a></li>
-                <li><a class="dropdown-item" href="#">Grid</a></li>
-                <li><a class="dropdown-item" href="#">Details</a></li>
-              </ul>
-            </li>
+                        <!-- PAGES -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PAGES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Our History</a></li>
+                                <li><a class="dropdown-item" href="#">Our Chefs</a></li>
+                                <li><a class="dropdown-item" href="#">Our Gallery</a></li>
+                                <li><a class="dropdown-item" href="#">Faqs</a></li>
+                            </ul>
+                        </li>
 
-            <!-- PAGES -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PAGES</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">About Us</a></li>
-                <li><a class="dropdown-item" href="#">Our History</a></li>
-                <li><a class="dropdown-item" href="#">Our Chefs</a></li>
-                <li><a class="dropdown-item" href="#">Our Gallery</a></li>
-                <li><a class="dropdown-item" href="#">Faqs</a></li>
-              </ul>
-            </li>
+                        <!-- SHOP -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SHOP</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Our Shop</a></li>
+                                <li><a class="dropdown-item" href="#">Product Details</a></li>
+                                <li><a class="dropdown-item" href="#">Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                            </ul>
+                        </li>
 
-            <!-- SHOP -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SHOP</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Our Shop</a></li>
-                <li><a class="dropdown-item" href="#">Product Details</a></li>
-                <li><a class="dropdown-item" href="#">Cart</a></li>
-                <li><a class="dropdown-item" href="#">Checkout</a></li>
-              </ul>
-            </li>
+                        <!-- BLOG -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">BLOG</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Standard</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                            </ul>
+                        </li>
 
-            <!-- BLOG -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">BLOG</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Blog Grid</a></li>
-                <li><a class="dropdown-item" href="#">Blog Standard</a></li>
-                <li><a class="dropdown-item" href="#">Blog Details</a></li>
-              </ul>
-            </li>
+                        <!-- CONTACT -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
 
-            <!-- CONTACT -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-          </ul>
+                    <!-- Buttons -->
+                    <div class="button-div ms-lg-4 mt-3 mt-lg-0 d-flex gap-2">
+                        <button class="buttons">Book A Table</button>
+                        <button class="button-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-          <!-- Buttons -->
-          <div class="button-div ms-lg-4 mt-3 mt-lg-0 d-flex gap-2">
-            <button class="buttons">Book A Table</button>
-            <button class="button-cart"><i class="fa-solid fa-cart-shopping"></i></button>
-          </div>
+        <!-- _______________________________________NAVBAR END______________________________________________________________ -->
+
+
+        <!-- ____________________________________________hero- section____________________________________________________ -->
+        <div class="row main-contanier">
+            <div class="col-lg-6 box1">
+                <div class="content-box">
+                    <span class="head-top">Hot for every Sunday</span>
+                    <h1 class="head-1">Enjoy our
+                        <br>
+                        <span class="red-word">delicius</span> food
+                    </h1>
+                    <p class="para-one">Savor the taste of our delicious, expertly crafted dishes made with the
+                        <br>
+                        finest ingredients, offering a perfect blend of flavors.
+                    </p>
+                    <button class="btn btn-danger red-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="col-lg-6 box2">
+                <img src="./IMAGES/biryani.png" alt="" height="450px" class="biryani-image">
+                <img src="./IMAGES/20%.png" alt="" class="rotate-image">
+            </div>
         </div>
-      </div>
-    </nav>
-</div>
-<!-- _______________________________________NAVBAR END______________________________________________________________ -->
+    </div>
 
+
+    <!-- ____________________________________________hero- section end____________________________________________________ -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
