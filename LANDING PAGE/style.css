@@ -6,6 +6,7 @@
 
   body {
     overflow-x: hidden;
+    /* background-color: #27201f; */
   }
 
 
@@ -189,6 +190,184 @@
 
   /* <!-- ____________________________________________hero- section end____________________________________________________ --> */
 
+/* <!-- ______________________________________our Categories section_______________________________________________________ --> */
+
+.fw-bold{
+ font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+}
+
+/* <!-- ______________________________________our Categories section end_______________________________________________________ --> */
+
+
+
+
+/* * <!-- ______________________________________About us_______________________________________________________ --> */ 
+
+.karahi-image{
+  /* background-color: aqua; */
+  margin-left: 340px;
+  margin-bottom: 60px;
+}
+
+ .content-box-two {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 130px;
+    line-height: 25px;
+    width: 540px;
+  }
+
+
+ .head-top-sec {
+    color: #FFB200;
+    font-weight: 500;
+    font-size:medium;
+  }
+
+.head-2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: rgb(7, 8, 12);
+
+  }
+.burger-div{
+  background-color:#F5F5F5;
+  width: 200px;
+  height: 100px;
+  margin-left: 15px;
+  border-radius: 15px;
+
+}
+.div-content{
+ position: relative;
+ bottom: 40px;
+ left: 50px;
+ 
+ 
+}
+.para-one{
+  color: rgb(255, 255, 255);
+}
+.para-two{
+  color: gray;
+}
+
+/* * <!-- ______________________________________About us end_______________________________________________________ --> */ 
+
+
+@media screen and (max-width: 576px) {
+
+  /* General */
+  .main-contanier {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .box1,
+  .box2 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-box {
+    margin-left: 0;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .head-1 {
+    font-size: 45px;
+    line-height: 1.1;
+  }
+
+  .para-one {
+    font-size: 14px;
+    color: white;
+    padding: 0 10px;
+  }
+
+  .red-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .biryani-image {
+    height: 150px;
+    margin: 20px 0;
+    margin-top: 400px;
+  }
+
+  .rotate-image {
+    display: none;
+  }
+
+  .karahi-image {
+    height: 250px;
+    margin: 0 auto 20px auto;
+    margin-top: 300px;
+  }
+
+  .content-box-two {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .head-2 {
+    font-size: 35px;
+  }
+
+  .burger-div {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .div-content {
+    position: static;
+    text-align: left;
+  }
+
+  .logo-image {
+    margin-left: 0;
+    width: 130px;
+  }
+
+  .navbar {
+    height: auto;
+    padding: 10px;
+  }
+
+  .button-div {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .buttons,
+  .button-cart {
+    width: 100%;
+  }
+
+}
 
   @media screen and (max-width: 768px) {
     .content-box {
@@ -207,12 +386,10 @@
 
 
     }
-
     .box2 {
 
       position: relative;
       bottom: 300px;
-
 
     }
 
@@ -221,7 +398,6 @@
       margin-left: 30px;
 
     }
-
 
   }
 
