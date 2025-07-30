@@ -258,6 +258,109 @@
 }
 
 /* * <!-- ______________________________________About us end_______________________________________________________ --> */ 
+/* <!-- _______________________________________special Combo offers__________________________________________________________ --> */
+    .offer-section {
+      background: url(./IMAGES/black\ texture\ image.jpeg) no-repeat center center;
+      background-size: cover;
+      padding: 80px 0;
+    }
+    .display-5{
+      color: rgb(255, 255, 255);
+    }
+    .timer-box {
+      background-color: #f0f0f0;
+      padding: 15px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .timer-box span {
+      font-size: 24px;
+      font-weight: bold;
+      display: block;
+      
+    }
+    
+    .redish-button{
+      background-color: #e4002b;
+      border: none;
+      padding: 12px 30px;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .fries-img{
+      margin-left: 1330px;
+      position: relative;
+      bottom: 80px;
+    }
+    .read-btn:hover {
+      background-color: #c90025;
+    }
+    .price-tag {
+      position: absolute;
+      top: -20px;
+      right: 30px;
+      background-color: #fff;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      color: #111;
+      font-size: 16px;
+      border: 2px dashed #000;
+    }
+    .combo-img {
+      position: relative;
+    }
+    .combo-img img {
+      max-width: 100%;
+    }
+
+/* <!-- _______________________________________special Combo offers end__________________________________________________________ --> */
+
+
+.choose-section {
+      padding: 80px 0;
+    }
+    .choose-heading {
+      font-size: 42px;
+      font-weight: 800;
+    }
+    .choose-card {
+      background-color: #f5f5f5;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s ease;
+      height: 100%;
+    }
+    .choose-card:hover {
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      transform: translateY(-5px);
+    }
+    .choose-icon {
+      font-size: 48px;
+      color: #e4002b;
+      margin-bottom: 20px;
+    }
+    .choose-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111;
+    }
+    .choose-desc {
+      color: #555;
+      font-size: 15px;
+    }
+    .choose-label {
+      color: #f0a500;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
 
 
 @media screen and (max-width: 576px) {
