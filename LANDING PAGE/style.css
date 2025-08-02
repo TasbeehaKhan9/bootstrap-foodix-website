@@ -262,6 +262,8 @@
   }
 
   /* * <!-- ______________________________________About us end_______________________________________________________ --> */
+
+
   /* <!-- _______________________________________special Combo offers__________________________________________________________ --> */
   .offer-section {
     background: url(./IMAGES/black\ texture\ image.jpeg) no-repeat center center;
@@ -383,7 +385,7 @@
   /* <!-- _______________________________________choose us end__________________________________________________________ --> */
 
 
-
+    /* <!-- _______________________________________Reservation__________________________________________________________ --> */
   .offer-section {
     background: url(./IMAGES/black\ texture\ image.jpeg) no-repeat center center;
     background-size: cover;
@@ -395,6 +397,8 @@
 
     margin-left: 300px;
     margin-top: 20px;
+    position: relative;
+    left: 300px;
   }
 
   .resev-sec {
@@ -491,8 +495,38 @@
   .theme-btn:hover {
     background-color: #094619
   }
+    /* <!-- _______________________________________Reservation end__________________________________________________________ --> */
 
 
+
+    /* <!-- _________________________________________________Food-items___________________________________________________________________ --> */
+
+      .text-orange {
+            color: #ffa500 !important;
+        }
+        
+        .text-red {
+            color: #dc3545 !important;
+        }
+        
+        .menu-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+            background-color: #14A83A;
+            color: white !important;
+                transition: transform 0.3s ease-in;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+        }
+        
+        .menu-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+/* <!-- _________________________________________________Food-items end___________________________________________________________________ --> */
   @media (min-width: 992px) {
     /* CSS for laptops and desktops */
 
