@@ -527,6 +527,99 @@
             object-fit: cover;
         }
 /* <!-- _________________________________________________Food-items end___________________________________________________________________ --> */
+
+
+/* <!-- ____________________________________chefs_____________________________________ --> */
+
+.thr-div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+    .text-orange {
+            color: #ffa500 !important;
+        }
+        
+        .team-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            background: #f8f9fa;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .team-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center top;
+        }
+/* <!-- ____________________________________chefs ends_____________________________________ --> */
+
+
+        .bg-cream {
+            background-color: #f5f1e8;
+        }
+        
+        .text-orange {
+            color: #ffa500 !important;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .star-rating {
+            color: #ffa500;
+            font-size: 1.2rem;
+        }
+        
+        .profile-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .rating-badge {
+            background-color: #28a745;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .carousel-indicators {
+            bottom: -50px;
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ccc;
+            border: none;
+            margin: 0 5px;
+        }
+        
+        .carousel-indicators .active {
+            background-color: #dc3545;
+        }
   @media (min-width: 992px) {
     /* CSS for laptops and desktops */
 
