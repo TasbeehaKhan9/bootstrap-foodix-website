@@ -560,6 +560,8 @@
 /* <!-- ____________________________________chefs ends_____________________________________ --> */
 
 
+/* <!-- ____________________________________Testimonials_____________________________________ --> */
+
         .bg-cream {
             background-color: #f5f1e8;
         }
@@ -620,6 +622,210 @@
         .carousel-indicators .active {
             background-color: #dc3545;
         }
+
+/* <!-- ____________________________________Testimonials end_____________________________________ --> */
+
+/* <!-- ____________________________________latest blog_____________________________________ --> */
+
+  .text-orange {
+            color: #ffa500 !important;
+        }
+        
+        .blog-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            background: #f8f9fa;
+            overflow: hidden;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .blog-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover .blog-image {
+            transform: scale(1.05);
+        }
+        
+        .blog-meta {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .blog-meta i {
+            margin-right: 5px;
+        }
+        
+        .blog-title {
+            color: #333;
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 1.3;
+            text-transform: uppercase;
+        }
+        
+        .blog-title:hover {
+            color: #ffa500;
+            text-decoration: none;
+        }
+        
+        .blog-excerpt {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .image-overlay {
+            overflow: hidden;
+        }
+/* <!-- ____________________________________latest blog end_____________________________________ --> */
+
+
+/* _____________________________________________footer_____________________________________________ */
+
+    .footer-dark {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer-dark::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -100px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(40, 167, 69, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .footer-dark::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            right: -120px;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(40, 167, 69, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .text-orange {
+            color: #ffa500 !important;
+        }
+        
+        .logo-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffa500;
+        }
+        
+        .footer-title {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-text {
+            color: #ccc;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .footer-link {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .footer-link:hover {
+            color: #ffa500;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background: #ffa500;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .opening-hours {
+            color: #ccc;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .closed {
+            color: #dc3545;
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 40px;
+            color: #999;
+            font-size: 13px;
+        }
+
+/* _____________________________________________footer end_____________________________________________ */
+
+
+
+
+.cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+.cart-item:last-child {
+    border-bottom: none;
+}
+.cart-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cart-item-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.cart-item-price {
+    color: #666;
+    font-size: 14px;
+}
+.remove-item {
+    color: #dc3545;
+    cursor: pointer;
+}
+
   @media (min-width: 992px) {
     /* CSS for laptops and desktops */
 

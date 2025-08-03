@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Playwrite+DK+Loopet:wght@100..400&family=Yesteryear&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bookatable.css">
+</head>
+
+<body>
+    <!-- _______________________________________NAVBAR START______________________________________________________________ -->
+   
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./IMAGES/logo 2.png" alt="Logo" class="logo-image ">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!-- HOME -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">HOME</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Home Restaurant</a></li>
+                                <li><a class="dropdown-item" href="#">Restaurant</a></li>
+                                <li><a class="dropdown-item" href="#">Beef</a></li>
+                                <li><a class="dropdown-item" href="#">Burger</a></li>
+                                <li><a class="dropdown-item" href="#">Pizza</a></li>
+                                <li><a class="dropdown-item" href="#">Sushi</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- MENU -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">MENU</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">List One</a></li>
+                                <li><a class="dropdown-item" href="#">List Two</a></li>
+                                <li><a class="dropdown-item" href="#">Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Details</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- PAGES -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PAGES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Our History</a></li>
+                                <li><a class="dropdown-item" href="#">Our Chefs</a></li>
+                                <li><a class="dropdown-item" href="#">Our Gallery</a></li>
+                                <li><a class="dropdown-item" href="#">Faqs</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- SHOP -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SHOP</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Our Shop</a></li>
+                                <li><a class="dropdown-item" href="#">Product Details</a></li>
+                                <li><a class="dropdown-item" href="#">Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- BLOG -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">BLOG</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Standard</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- CONTACT -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+
+                    <!-- Buttons -->
+                    <div class="button-div ms-lg-4 mt-3 mt-lg-0 d-flex gap-2">
+                        <button class="buttons">Book A Table</button>
+                        <button class="btn btn-success position-relative"  data-bs-toggle="offcanvas"  data-bs-target="#cartOffcanvas">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        4
+    </span>
+</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- _______________________________________NAVBAR END______________________________________________________________ -->
+
+
+                <!-- _______________________________________NAVBAR END______________________________________________________________ -->
+
+                <section class="hero-section d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-content text-center">
+                        
+                        <!-- Page Title -->
+                        <h1 class="hero-title text-uppercase">Contact us</h1>
+                        
+                        <!-- Breadcrumb Navigation -->
+                        <div class="breadcrumb-wrapper">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb breadcrumb-custom justify-content-center mb-0">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html" class="text-decoration-none">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        Contact
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <section class="py-5 bg-cream">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                
+                <!-- Left Side - Contact Form -->
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <!-- Section Label -->
+                        <div class="contact-label">
+                            GET IN TOUCH
+                        </div>
+                        
+                        <!-- Main Heading -->
+                        <h2 class="contact-heading mb-4">
+                            HAVE QUESTIONS? GET IN<br>
+                            TOUCH!
+                        </h2>
+                        
+                        <!-- Contact Form -->
+                        <form>
+                            <!-- Name and Email Row -->
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" 
+                                           class="form-control form-control-custom" 
+                                           placeholder="Your Name" 
+                                           required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" 
+                                           class="form-control form-control-custom" 
+                                           placeholder="Your Email" 
+                                           required>
+                                </div>
+                            </div>
+                            
+                            <!-- Subject and Service Row -->
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" 
+                                           class="form-control form-control-custom" 
+                                           placeholder="Your Subject" 
+                                           required>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-control form-control-custom" required>
+                                        <option value="">Your Service</option>
+                                        <option value="reservation">Table Reservation</option>
+                                        <option value="catering">Catering Services</option>
+                                        <option value="private-dining">Private Dining</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="feedback">Feedback</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Message Textarea -->
+                            <div class="mb-4">
+                                <textarea class="form-control form-control-custom" 
+                                          rows="5" 
+                                          placeholder="Write message" 
+                                          required></textarea>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-red">
+                                Submit Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Chef Image -->
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <img src="./IMAGES/fotm chef.png" 
+                             alt="Professional Chef" 
+                             class="chef-image">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info-section">
+        <div class="container">
+            
+            <!-- Section Header -->
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="text-red text-uppercase fw-bold mb-3" style="font-size: 14px; letter-spacing: 1px;">
+                        📞 GET IN TOUCH
+                    </div>
+                    <h2 class="display-6 fw-bold text-dark text-uppercase">
+                        CONTACT INFORMATION
+                    </h2>
+                </div>
+            </div>
+            
+            <!-- Contact Cards -->
+            <div class="row g-4">
+                
+                <!-- Address Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="contact-title">Address</h4>
+                        <div class="contact-details">
+                            4140 Parker Rd. Allentown,<br>
+                            New Mexico 31134
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Email Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 class="contact-title">Email</h4>
+                        <div class="contact-details">
+                            <a href="mailto:foodixsupport@gmail.com">foodixsupport@gmail.com</a><br>
+                            <a href="mailto:foodixinfo@gmail.com">foodixinfo@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phone Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4 class="contact-title">Phone</h4>
+                        <div class="contact-details">
+                            <a href="tel:+5551234567890">+555-123 456 7890</a><br>
+                            <a href="tel:+5551237768875">+555-123 776 8875</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <div class="map-img">
+        <img src="./IMAGES/WhatsApp Image 2025-08-03 at 5.48.21 PM.jpeg" alt="" width="2000px">
+    </div>
+<!-- ____________________________________footer_____________________________________ -->
+
+   <footer class="footer-dark py-5">
+        <div class="container position-relative">
+            
+            <!-- Main Footer Content -->
+            <div class="row g-4">
+                
+                <!-- Company Info -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- Logo -->
+                    <div class="mb-4">
+                        <h3 class="logo-text">
+                            <img src="./IMAGES/foodix logo.png" alt="">
+                        </h3>
+                    </div>
+                    
+                    <!-- Description -->
+                    <p class="footer-text mb-4">
+                        Discover culinary delights recipes and inspiration in our delightful food haven.
+                    </p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Us -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Contact Us</h4>
+                    
+                    <!-- Address -->
+                    <div class="mb-3">
+                        <p class="footer-text mb-1">
+                            <i class="fas fa-map-marker-alt text-orange me-2"></i>
+                            1901 Thornridge Cir. Shiloh, Hawaii 81063
+                        </p>
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <p class="footer-text mb-1">
+                            <i class="fas fa-phone text-orange me-2"></i>
+                            +88-344-667-999
+                        </p>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <p class="footer-text mb-1">
+                            <i class="fas fa-envelope text-orange me-2"></i>
+                            order@foodix.com
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Quick Link</h4>
+                    
+                    <nav class="footer-nav">
+                        <a href="#" class="footer-link">Home</a>
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Services</a>
+                        <a href="#" class="footer-link">Our Menu</a>
+                        <a href="#" class="footer-link">Gallery</a>
+                    </nav>
+                </div>
+                
+                <!-- Opening Time -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Opening Time</h4>
+                    
+                    <div class="opening-schedule">
+                        <div class="opening-hours">
+                            <strong>Monday:</strong> 10.00am - 05.00pm
+                        </div>
+                        <div class="opening-hours">
+                            <strong>Tuesday:</strong> 10.20am - 05.30pm
+                        </div>
+                        <div class="opening-hours">
+                            <strong>Wednesday:</strong> 10.30am - 05.50pm
+                        </div>
+                        <div class="opening-hours">
+                            <strong>Thursday:</strong> 11.00am - 07.10pm
+                        </div>
+                        <div class="opening-hours closed">
+                            <strong>Friday:</strong> Closed
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright text-center">
+                        © 2024 All rights reserved design by Pixelfit
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+<!-- ____________________________________footer end_____________________________________ -->
+
+
+<!-- 2. Cart Sidebar (body tag se pehle add karo) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+    
+    <!-- Header -->
+    <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold">
+            <i class="fas fa-shopping-cart me-2"></i>My cart
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    
+    <!-- Body -->
+    <div class="offcanvas-body p-0 d-flex flex-column">
+        
+        <!-- Items Container -->
+        <div class="flex-grow-1 p-3">
+            
+            <!-- Single Cart Item Template -->
+            <div class="cart-item">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img src="./IMAGES/urban.jpg" 
+                             alt="Product Name" 
+                             class="cart-item-image" height="70px">
+                    </div>
+                    <div class="col-7">
+                        <div class="cart-item-name">Product Name</div>
+                        <div class="cart-item-price">1 × $940.00</div>
+                    </div>
+                    <div class="col-2 text-end">
+                        <i class="fas fa-trash remove-item"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- More items... -->
+
+
+
+              <div class="row align-items-center">
+                    <div class="col-3">
+                        <img src="./IMAGES/artis.jpg" 
+                             alt="Product Name" 
+                             class="cart-item-image" height="70px">
+                    </div>
+                    <div class="col-7">
+                        <div class="cart-item-name">Product Name</div>
+                        <div class="cart-item-price">1 × $940.00</div>
+                    </div>
+                    <div class="col-2 text-end">
+                        <i class="fas fa-trash remove-item"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+            
+        </div>
+
+        
+        
+        <!-- Footer -->
+        <div class="mt-auto p-3 border-top bg-light">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="fw-bold">Subtotal:</span>
+                <span class="fw-bold fs-5">$940.00</span>
+            </div>
+            <button class="btn btn-danger w-100 py-3 fw-bold">
+                Proceed to checkout
+            </button>
+        </div>
+        
+    </div>
+</div>
+
+
+<!-- 2. Cart Sidebar (body tag se pehle add karo) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+    
+    <!-- Header -->
+    <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold">
+            <i class="fas fa-shopping-cart me-2"></i>My cart
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    
+    <!-- Body -->
+    <div class="offcanvas-body p-0 d-flex flex-column">
+        
+        <!-- Items Container -->
+        <div class="flex-grow-1 p-3">
+            
+            <!-- Single Cart Item Template -->
+            <div class="cart-item">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img src="/placeholder.svg?height=60&width=60" 
+                             alt="Product Name" 
+                             class="cart-item-image">
+                    </div>
+                    <div class="col-7">
+                        <div class="cart-item-name">Product Name</div>
+                        <div class="cart-item-price">1 × $940.00</div>
+                    </div>
+                    <div class="col-2 text-end">
+                        <i class="fas fa-trash remove-item"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+            
+            <!-- More items... -->
+            
+        </div>
+        
+        <!-- Footer -->
+        <div class="mt-auto p-3 border-top bg-light">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="fw-bold">Subtotal:</span>
+                <span class="fw-bold fs-5">$940.00</span>
+            </div>
+            <button class="btn btn-danger w-100 py-3 fw-bold">
+                Proceed to checkout
+            </button>
+        </div>
+        
+    </div>
+</div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>

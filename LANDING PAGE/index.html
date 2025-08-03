@@ -44,6 +44,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">HOME</a>
                             <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Home Restaurant</a></li>
                                 <li><a class="dropdown-item" href="#">Restaurant</a></li>
                                 <li><a class="dropdown-item" href="#">Beef</a></li>
                                 <li><a class="dropdown-item" href="#">Burger</a></li>
@@ -104,8 +105,14 @@
 
                     <!-- Buttons -->
                     <div class="button-div ms-lg-4 mt-3 mt-lg-0 d-flex gap-2">
-                        <button class="buttons">Book A Table</button>
-                        <button class="button-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <a href="bookatable.html"><button class="buttons">Book A Table</button></a>
+                                          <button class="btn btn-success position-relative"  data-bs-toggle="offcanvas"  data-bs-target="#cartOffcanvas">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        4
+    </span>
+</button>
+             
                     </div>
                 </div>
             </div>
@@ -264,7 +271,7 @@
                 </div>
                 <!-- Image + Price -->
                 <div class="col-lg-6 text-center combo-img">
-                    <img src="./IMAGES/burger with cold drink.png" alt="Combo Meal" class="img-fluid">
+                    <img src="./IMAGES/burger with cold drink.png" alt="Combo Meal" class="img-fluid" data-aos="fade-up" >
 
 
                 </div>
@@ -282,28 +289,28 @@
             <h2 class="choose-heading mb-5">WHY WE’RE YOUR BEST CHOICE</h2>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-3">
-                    <div class="choose-card">
+                    <div class="choose-card" data-aos="fade-up">
                         <div class="choose-icon"><img src="./png/009-fruit-juice.png" alt=""></div>
                         <div class="choose-title">Hygienic Food</div>
                         <p class="choose-desc">We are passionate about serving fresh, flavorful</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="choose-card" style="background-color: #f9f2f2;">
+                    <div class="choose-card" style="background-color: #f9f2f2;" data-aos="fade-up">
                         <div class="choose-icon"><img src="./png/010-save-water.png" alt=""></div>
                         <div class="choose-title">Fresh Environment</div>
                         <p class="choose-desc">We are passionate about serving fresh, flavorful</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="choose-card">
+                    <div class="choose-card" data-aos="fade-up">
                         <div class="choose-icon"><img src="./png/001-chef-hat.png" alt=""></div>
                         <div class="choose-title">Skilled Chefs</div>
                         <p class="choose-desc">We are passionate about serving fresh, flavorful</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="choose-card">
+                    <div class="choose-card" data-aos="fade-up">
                         <div class="choose-icon"><img src="./png/002-party.png" alt=""></div>
                         <div class="choose-title">Event & Party</div>
                         <p class="choose-desc">We are passionate about serving fresh, flavorful</p>
@@ -324,14 +331,14 @@
 
         <div class="row ">
             <div class=" resev-sec col-6 ">
-                <div class="reser-main-cont ">
+                <div class="reser-main-cont " data-aos="fade-left">
                     <p class="choose-label"><img src="./png/008-dinner.png" alt="" height="20px">Reservation</p>
                     <h2 class="choose-heading mb-5 book-head">Need reservation? <br>booking your table now</h2>
                     <p class="next-sec-para">Order online</p>
                     <button class="btn btn-danger red-btn redish-button cal-btn"> 📞123215262 </button>
                 </div>
             </div>
-            <div class=" for-sec col-6">
+            <div class=" for-sec col-6" data-aos="fade-up">
                 <form class="booking-form">
                     <div class="row">
                         <div class="col-lg-6">
@@ -402,7 +409,7 @@
                     </div>
                     
                     <!-- Main Heading -->
-                    <h2 class="display-4 fw-bold text-dark text-uppercase mb-0">
+                    <h2 class="display-4 fw-bold text-dark text-uppercase mb-0" data-aos="fade-up">
                         EXPLORE OUR DELICIOUS<br>
                         MENU
                     </h2>
@@ -416,7 +423,7 @@
                 <div class="col-lg-6">
                     
                     <!-- Truffle Mac and Cheese -->
-                    <div class="card border-0 shadow-sm mb-4 menu-item">
+                    <div class="card border-0 shadow-sm mb-4 menu-item" data-aos="fade-right">
                         <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-auto">
@@ -438,7 +445,7 @@
                     </div>
                     
                     <!-- Honey-Glazed Salmon -->
-                    <div class="card border-0 shadow-sm mb-4 menu-item">
+                    <div class="card border-0 shadow-sm mb-4 menu-item" data-aos="fade-right">
                         <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-auto">
@@ -460,7 +467,7 @@
                     </div>
                     
                     <!-- Gourmet Mushroom Risotto -->
-                    <div class="card border-0 shadow-sm mb-4 menu-item">
+                    <div class="card border-0 shadow-sm mb-4 menu-item" data-aos="fade-right">
                         <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-auto">
@@ -482,7 +489,7 @@
                     </div>
                     
                     <!-- BBQ Bacon Burger -->
-                    <div class="card border-0 shadow-sm mb-4 menu-item">
+                    <div class="card border-0 shadow-sm mb-4 menu-item" data-aos="fade-right">
                         <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-auto">
@@ -509,7 +516,7 @@
                 <div class="col-lg-6">
                     
                     <!-- Grilled Ribeye Steak -->
-                    <div class="card border-0 shadow-sm mb-4 menu-item">
+                    <div class="card border-0 shadow-sm mb-4 menu-item"data-aos="fade-left">
                         <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-auto">
@@ -531,7 +538,7 @@
                     </div>
                     
                     <!-- Thai Coconut Curry -->
-                    <div class="card border-0 shadow-sm mb-4 menu-item">
+                    <div class="card border-0 shadow-sm mb-4 menu-item" data-aos="fade-left">
                         <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-auto">
@@ -540,7 +547,7 @@
                                          class="rounded-circle menu-image">
                                 </div>
                                 <div class="col">
-                                    <div class="d-flex justify-content-between align-items-start">
+                                    <div class="d-flex justify-content-between align-items-start" data-aos="fade-left">
                                         <div>
                                             <h5 class="fw-bold mb-2 text-dark">Thai Coconut Curry</h5>
                                             <p class="text-muted mb-0 small">Fragrant Thai coconut curry with vibrant vegetables.</p>
@@ -553,7 +560,7 @@
                     </div>
                     
                     <!-- Margarita Shrimp Tacos -->
-                    <div class="card border-0 shadow-sm mb-4 menu-item">
+                    <div class="card border-0 shadow-sm mb-4 menu-item" data-aos="fade-left">
                         <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-auto">
@@ -575,7 +582,7 @@
                     </div>
                     
                     <!-- Spicy Tuna Roll -->
-                    <div class="card border-0 shadow-sm mb-4 menu-item">
+                    <div class="card border-0 shadow-sm mb-4 menu-item" data-aos="fade-left">
                         <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-auto">
@@ -638,7 +645,7 @@
                     </div>
                     
                     <!-- Main Heading -->
-                    <h2 class="display-4 fw-bold text-dark text-uppercase mb-0">
+                    <h2 class="display-4 fw-bold text-dark text-uppercase mb-0" data-aos="fade-right">
                         Introducing Our Culinary<br>
                          Masters
                     </h2>
@@ -654,7 +661,7 @@
             <div class="row g-4 justify-content-center">
                 
                 <!-- David Liam -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
                     <div class="card team-card h-100">
                         <div class="card-img-top overflow-hidden">
                             <img src="./IMAGES/alex.jpg" 
@@ -669,7 +676,7 @@
                 </div>
                 
                 <!-- Alex Mika -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" >
                     <div class="card team-card h-100">
                         <div class="card-img-top overflow-hidden">
                             <img src="./IMAGES/john.jpg" 
@@ -684,7 +691,7 @@
                 </div>
                 
                 <!-- John Smith -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
                     <div class="card team-card h-100">
                         <div class="card-img-top overflow-hidden">
                             <img src="./IMAGES/david.jpg" 
@@ -703,6 +710,9 @@
         </div>
     </section>
 <!-- ____________________________________chefs end_____________________________________ -->
+
+
+<!-- ____________________________________Testimonials_____________________________________ -->
 
 
     <section class="py-5 bg-cream">
@@ -857,7 +867,7 @@
                                     </p>
                                     
                                     <!-- Customer Info -->
-                                    <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center justify-content-between" >
                                         <div class="d-flex align-items-center">
                                             <img src="./IMAGES/david laim.jpg" 
                                                  alt="Michael Brown" 
@@ -888,8 +898,404 @@
             
         </div>
     </section>
+<!-- ____________________________________Testimonials end_____________________________________ -->
+
+<!-- ____________________________________latest blog_____________________________________ -->
+      <div class="container">
+            
+            <!-- Section Header -->
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <!-- Blog Label -->
+                    <div class="text-orange text-uppercase fw-bold mb-3" style="font-size: 14px; letter-spacing: 1px;">
+                        <img src="./png/008-dinner.png" alt=""> OUR LATEST BLOG
+                    </div>
+                    
+                    <!-- Main Heading -->
+                    <h2 class="display-5 fw-bold text-dark text-uppercase">
+                        DISCOVER OUR LATEST BLOG<br>
+                        POSTS
+                    </h2>
+                </div>
+            </div>
+            
+            <!-- Blog Posts Grid -->
+            <div class="row g-4">
+                
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-card h-100">
+                        <div class="image-overlay">
+                            <img src="./IMAGES/crispy patoto.jpg" 
+                                 alt="Crispy Stovetop Roasted Red Potatoes" 
+                                 class="blog-image">
+                        </div>
+                        <div class="card-body p-4">
+                            <!-- Blog Meta -->
+                            <div class="blog-meta mb-3">
+                                <span class="me-3">
+                                    <i class="fas fa-user"></i>
+                                    By David
+                                </span>
+                                <span>
+                                    <i class="fas fa-comment"></i>
+                                    Comment (2)
+                                </span>
+                            </div>
+                            
+                            <!-- Blog Title -->
+                            <h5 class="blog-title mb-3">
+                                <a href="#" class="text-decoration-none blog-title">
+                                    CRISPY STOVETOP ROASTED RED POTATOES FOODS
+                                </a>
+                            </h5>
+                            
+                            <!-- Blog Excerpt -->
+                            <p class="blog-excerpt mb-0">
+                                Crispy stovetop red potatoes, seasoned to perfection, golden and delicious.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-card h-100">
+                        <div class="image-overlay">
+                            <img src="./IMAGES/jimmy soft.jpg" 
+                                 alt="How to Make Jimmy Soft Boiled Eggs" 
+                                 class="blog-image">
+                        </div>
+                        <div class="card-body p-4">
+                            <!-- Blog Meta -->
+                            <div class="blog-meta mb-3">
+                                <span class="me-3">
+                                    <i class="fas fa-user"></i>
+                                    By David
+                                </span>
+                                <span>
+                                    <i class="fas fa-comment"></i>
+                                    Comment (2)
+                                </span>
+                            </div>
+                            
+                            <!-- Blog Title -->
+                            <h5 class="blog-title mb-3">
+                                <a href="#" class="text-decoration-none blog-title">
+                                    HOW TO MAKE JIMMY SOFT BOILED EGGS AT HOME
+                                </a>
+                            </h5>
+                            
+                            <!-- Blog Excerpt -->
+                            <p class="blog-excerpt mb-0">
+                                Make Jimmy soft-boiled eggs at home with tender whites and creamy yolks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-card h-100">
+                        <div class="image-overlay">
+                            <img src="./IMAGES/traditional soft.jpg" 
+                                 alt="Traditional Soft Pretzels with Sweet Beer Cheese" 
+                                 class="blog-image">
+                        </div>
+                        <div class="card-body p-4">
+                            <!-- Blog Meta -->
+                            <div class="blog-meta mb-3">
+                                <span class="me-3">
+                                    <i class="fas fa-user"></i>
+                                    By David
+                                </span>
+                                <span>
+                                    <i class="fas fa-comment"></i>
+                                    Comment (2)
+                                </span>
+                            </div>
+                            
+                            <!-- Blog Title -->
+                            <h5 class="blog-title mb-3">
+                                <a href="#" class="text-decoration-none blog-title">
+                                    TRADITIONAL SOFT PRETZELS WITH SWEET BEER CHEESE
+                                </a>
+                            </h5>
+                            
+                            <!-- Blog Excerpt -->
+                            <p class="blog-excerpt mb-0">
+                                Warm, traditional soft pretzels served with rich, sweet beer cheese dip.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+         
+            
+        </div>
+    </section>
+<!-- ____________________________________latest blog end_____________________________________ -->
+
+<!-- ____________________________________footer_____________________________________ -->
+
+   <footer class="footer-dark py-5">
+        <div class="container position-relative">
+            
+            <!-- Main Footer Content -->
+            <div class="row g-4">
+                
+                <!-- Company Info -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- Logo -->
+                    <div class="mb-4">
+                        <h3 class="logo-text">
+                            <img src="./IMAGES/foodix logo.png" alt="">
+                        </h3>
+                    </div>
+                    
+                    <!-- Description -->
+                    <p class="footer-text mb-4">
+                        Discover culinary delights recipes and inspiration in our delightful food haven.
+                    </p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Us -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Contact Us</h4>
+                    
+                    <!-- Address -->
+                    <div class="mb-3">
+                        <p class="footer-text mb-1">
+                            <i class="fas fa-map-marker-alt text-orange me-2"></i>
+                            1901 Thornridge Cir. Shiloh, Hawaii 81063
+                        </p>
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <p class="footer-text mb-1">
+                            <i class="fas fa-phone text-orange me-2"></i>
+                            +88-344-667-999
+                        </p>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <p class="footer-text mb-1">
+                            <i class="fas fa-envelope text-orange me-2"></i>
+                            order@foodix.com
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Quick Link</h4>
+                    
+                    <nav class="footer-nav">
+                        <a href="#" class="footer-link">Home</a>
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Services</a>
+                        <a href="#" class="footer-link">Our Menu</a>
+                        <a href="#" class="footer-link">Gallery</a>
+                    </nav>
+                </div>
+                
+                <!-- Opening Time -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Opening Time</h4>
+                    
+                    <div class="opening-schedule">
+                        <div class="opening-hours">
+                            <strong>Monday:</strong> 10.00am - 05.00pm
+                        </div>
+                        <div class="opening-hours">
+                            <strong>Tuesday:</strong> 10.20am - 05.30pm
+                        </div>
+                        <div class="opening-hours">
+                            <strong>Wednesday:</strong> 10.30am - 05.50pm
+                        </div>
+                        <div class="opening-hours">
+                            <strong>Thursday:</strong> 11.00am - 07.10pm
+                        </div>
+                        <div class="opening-hours closed">
+                            <strong>Friday:</strong> Closed
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright text-center">
+                        © 2024 All rights reserved design by Pixelfit
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
 
 
+
+<!-- 2. Cart Sidebar (body tag se pehle add karo) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+    
+    <!-- Header -->
+    <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold">
+            <i class="fas fa-shopping-cart me-2"></i>My cart
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    
+    <!-- Body -->
+    <div class="offcanvas-body p-0 d-flex flex-column">
+        
+        <!-- Items Container -->
+        <div class="flex-grow-1 p-3">
+            
+            <!-- Single Cart Item Template -->
+            <div class="cart-item">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img src="./IMAGES/urban.jpg" 
+                             alt="Product Name" 
+                             class="cart-item-image" height="70px">
+                    </div>
+                    <div class="col-7">
+                        <div class="cart-item-name">Product Name</div>
+                        <div class="cart-item-price">1 × $940.00</div>
+                    </div>
+                    <div class="col-2 text-end">
+                        <i class="fas fa-trash remove-item"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- More items... -->
+
+
+
+              <div class="row align-items-center">
+                    <div class="col-3">
+                        <img src="./IMAGES/artis.jpg" 
+                             alt="Product Name" 
+                             class="cart-item-image" height="70px">
+                    </div>
+                    <div class="col-7">
+                        <div class="cart-item-name">Product Name</div>
+                        <div class="cart-item-price">1 × $940.00</div>
+                    </div>
+                    <div class="col-2 text-end">
+                        <i class="fas fa-trash remove-item"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+            
+        </div>
+
+        
+        
+        <!-- Footer -->
+        <div class="mt-auto p-3 border-top bg-light">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="fw-bold">Subtotal:</span>
+                <span class="fw-bold fs-5">$940.00</span>
+            </div>
+            <button class="btn btn-danger w-100 py-3 fw-bold">
+                Proceed to checkout
+            </button>
+        </div>
+        
+    </div>
+</div>
+
+
+<!-- 2. Cart Sidebar (body tag se pehle add karo) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+    
+    <!-- Header -->
+    <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold">
+            <i class="fas fa-shopping-cart me-2"></i>My cart
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    
+    <!-- Body -->
+    <div class="offcanvas-body p-0 d-flex flex-column">
+        
+        <!-- Items Container -->
+        <div class="flex-grow-1 p-3">
+            
+            <!-- Single Cart Item Template -->
+            <div class="cart-item">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img src="/placeholder.svg?height=60&width=60" 
+                             alt="Product Name" 
+                             class="cart-item-image">
+                    </div>
+                    <div class="col-7">
+                        <div class="cart-item-name">Product Name</div>
+                        <div class="cart-item-price">1 × $940.00</div>
+                    </div>
+                    <div class="col-2 text-end">
+                        <i class="fas fa-trash remove-item"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+            
+            <!-- More items... -->
+            
+        </div>
+        
+        <!-- Footer -->
+        <div class="mt-auto p-3 border-top bg-light">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="fw-bold">Subtotal:</span>
+                <span class="fw-bold fs-5">$940.00</span>
+            </div>
+            <button class="btn btn-danger w-100 py-3 fw-bold">
+                Proceed to checkout
+            </button>
+        </div>
+        
+    </div>
+</div>
+
+
+<!-- ____________________________________footer end_____________________________________ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
